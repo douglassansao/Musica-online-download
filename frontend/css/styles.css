@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    display: block;
+}
+
+.new-releases, .genres, .search {
+    padding: 2em;
+}
+
+.new-releases h2, .genres h1, .search h1 {
+    margin-top: 0;
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album, .genre-item {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    width: calc(33% - 2em);
+}
+
+.album img {
+    max-width: 100%;
+}
+
+.genre-item {
+    cursor: pointer;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+#search-results .album {
+    width: calc(50% - 2em);
+}
